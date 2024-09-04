@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            color: Colors.pink[200],
+            color: Color.fromARGB(255, 242, 76, 20),
             height: double.infinity,
              child: Container(margin:EdgeInsets.only(left:15,top: 10),
                child: Row(
@@ -25,12 +25,17 @@ class HomeScreen extends StatelessWidget {
                  
                 ],
                      ),
-               Container(
-                width:200,
-                height:200,
-                color:Colors.white,
-                child: Image.asset('images/vecteezy_top-view-pizza-with_24589160.png'),
-                         )
+               SizedBox(width:80 ,),
+               Column(mainAxisAlignment:MainAxisAlignment.start ,
+                 children: [
+                   Container(
+                    width:200,
+                    height:200,
+                   
+                    child: Image.asset('images/vecteezy_top-view-pizza-with_24589160.png',fit:BoxFit.fill),
+                             ),
+                 ],
+               )
                        ],),
              ),
           ),

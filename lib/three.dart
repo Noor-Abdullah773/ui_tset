@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class Second extends StatelessWidget {
-  const Second({super.key});
+class Three extends StatelessWidget {
+  const Three({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class Second extends StatelessWidget {
             height: double.infinity,
             child:Column(mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Container(child: Image.asset('images/hqdefault (1).jpg',fit:BoxFit.fill),width:double.infinity,height: 300,),
+                Container(child: Image.asset('images/1-64-scaled.jpg',fit:BoxFit.fill),width:double.infinity,height: 300,),
               ],
             ), 
           
@@ -95,10 +95,28 @@ class Second extends StatelessWidget {
                           ],
                         ),
                       ),
-                        SizedBox(height:20,),
-                          Container(
+                        SizedBox(height:10,),
+                        Container(
+                width: double.infinity, 
+                height: 80,
+                  decoration:BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(255, 247, 89, 11)
+            ),
+            child: Container(margin:EdgeInsets.all(10),
+              child:Column(children: [
+                Text("Campagin into",style: TextStyle(fontSize: 20,color:Colors.white),),
+                SizedBox(height:10,),
+                 Text("Detail More",style: TextStyle(fontSize: 10,color:Colors.white),),
+                 
+              ],),
+            ),
+              ),
+                        SizedBox(height:10,),
+                       
+                Container(
               color: Colors.white,
-              height: 300,
+              height: 250,
               width: double.infinity,
             child: ListView.builder(
               itemCount: 10,
